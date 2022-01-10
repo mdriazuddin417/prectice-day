@@ -1,0 +1,30 @@
+.animation-box { width: 600px; height: 400px; background-color: linen; border: 2px solid maroon; padding: 0px; }
+.ball { width: 30px; height: 30px; border-radius: 50%; background: orangered; animation: 3s ease-in 0.5s infinite alternate none running riaz; position: relative; }
+@keyframes riaz { 
+  0% { 
+      top: 0px; left: 0px;transform:scale(0.5);
+ }
+  25% {top: 100px;left: 90px;transform:scale(1);background: limegreen;}
+  50% {top: 120px;left: 0px;transform:scale(0.5);background: rgb(50, 148, 205);}
+  75% {top: 280px;left: 275px;transform:scale(1);background: rgb(178, 29, 216);}
+  100% {left: 0;top: 350px;transform:scale(0.5);background: rgb(206, 18, 18);}
+}
+.animation-box:hover .stick { transform: rotate(30deg); transform-origin: left top; }
+.stick { padding: 0px; width: 10px; height: 100px; background: rgb(140, 139, 139); border-radius: 4px 4px 2px 2px; position: relative; transition: transform 0.3s ease-in 0s; }
+.animation-box:hover #stick-2 { transform: rotate(-30deg); transform-origin: right top; }
+div#stick-1 { left: 30%; transition-delay: 0.5s;}
+div#stick-2 { left: 30%; transition-delay: 1s;left:0;}
+div#stick-3 { left: 60%; transition-delay: 1.5s;}
+.main-position { background-image: linear-gradient(rgb(147, 231, 68), cyan); width: 200px; padding: 20px; border-radius: 10px; }
+#water { position: relative; top: -75px; }
+#ring { position: relative; z-index: 2; }
+#boy { position: relative; top: 95px; z-index: 5; }
+table { border-collapse: collapse; }
+tr, td, th { border: 1px solid lightgray; padding: 10px; }
+th { background-color: silver; color: indigo; }
+tr:nth-child(2n) { background-color: lightpink; color: teal; }
+tr:nth-child(2n+1) { background-color: lightsteelblue; color: steelblue; }
+.parent { display: flex; }
+div { padding: 10px; }
+#semantic p { background-color: lightskyblue; width: 500px; padding: 5px; }
+.fab { font-size: 30px; color: rgb(15, 108, 201); }
